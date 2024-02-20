@@ -1,0 +1,16 @@
+/*Вывод всей информации из таблицы book*/
+Select * from book
+
+/*Вывод информации по конкретным стобцам из таблицы book*/
+Select author, title, amount from book
+
+/*Выборка новых столбцов и присвоение им новых имен таблицы book*/
+SELECT title AS Название, author As Автор 
+FROM book;
+
+
+/*Выборка данных с созданием вычисляемого столбца таблицы book*/
+Select title,amount,
+amount * 1.65 as pack
+from book;
+
